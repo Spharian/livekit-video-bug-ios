@@ -1,0 +1,92 @@
+{
+  "expo": {
+    "name": "XXX",
+    "slug": "xxx",
+    "owner": "xxx",
+    "version": "2.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "xxx",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0a0808"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/764ccfc3-03bb-4878-98f2-77372e9e821c"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.xxx.xxx",
+      "config": {
+        "usesNonExemptEncryption": false
+      },
+      "infoPlist": {
+        "CFBundleDevelopmentRegion": "fr",
+        "NSPhotoLibraryUsageDescription": "XXX souhaite accéder à votre librairie afin de pouvoir ajouter un avatar",
+        "LSApplicationQueriesSchemes": [
+          "instagram",
+          "instagram-stories"
+        ],
+        "UIBackgroundModes": [
+          "audio"
+        ],
+        "NSMicrophoneUsageDescription": "XXX souhaite accéder à votre micro",
+        "NSCameraUsageDescription": "XXX souhaite accéder à votre caméra"
+      }
+    },
+    "notification": {
+      "iosDisplayInForeground": true
+    },
+    "android": {
+      "package": "com.xxx.live.xxx",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1c1c1e"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "deploymentTarget": "13.4"
+          },
+          "android": {
+            "compileSdkVersion": 34,
+            "targetSdkVersion": 34,
+            "buildToolsVersion": "34.0.0"
+          }
+        }
+      ],
+      [
+        "@config-plugins/react-native-webrtc"
+      ],
+      "react-native-vision-camera",
+      [
+        "@livekit/react-native-expo-plugin",
+        {
+          "android": {
+            "audioType": "media"
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "764ccfc3-03bb-4878-98f2-77372e9e821c"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    }
+  }
+}
