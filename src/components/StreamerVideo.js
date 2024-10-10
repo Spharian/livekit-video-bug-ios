@@ -41,8 +41,6 @@ const StreamerVideo = forwardRef(({ show, navigation }, ref) => {
         await AudioSession.startAudioSession()
         await room?.connect('wss://shiny-live-uvi5t81k.livekit.cloud', streamerToken)
 
-        setRoomIsConnected(true)
-
         room?.localParticipant.setMicrophoneEnabled(true)
         room?.localParticipant.setCameraEnabled(true)
       } catch (error) {
